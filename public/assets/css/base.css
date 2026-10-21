@@ -1,0 +1,107 @@
+/* Identidade Simone Flores: verde-musgo, dourado, rosa antigo e papel creme. */
+:root {
+  --verde: #2d3b27;
+  --verde-2: #475a3c;
+  --salvia: #8fa382;
+  --salvia-clara: #dfe6d6;
+  --creme: #f7f0e5;
+  --papel: #fffaf3;
+  --ouro: #b0884a;
+  --ouro-claro: #e9d6b0;
+  --rosa: #eab9b1;
+  --rosa-forte: #b9605d;
+  --tinta: #26281f;
+  --tinta-2: #5d5f52;
+  --linha: #e6dccb;
+  --wpp: #1f9d55;
+  --sombra: 0 18px 40px -22px rgba(45, 59, 39, .45);
+  --raio: 18px;
+  --serifa: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Jost', system-ui, sans-serif;
+  --script: 'Parisienne', cursive;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--creme);
+  color: var(--tinta);
+  font: 400 16px/1.6 var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+button, input, textarea, select { font: inherit; color: inherit; }
+h1, h2, h3 { font-family: var(--serifa); font-weight: 500; line-height: 1.1; margin: 0; color: var(--verde); }
+/* A Cormorant usa algarismos "antigos" por padrão: o 0 parece O e o 1 parece I. */
+body, h1, h2, h3, h4, b { font-variant-numeric: lining-nums; }
+h1 em, h2 em, h3 em { font-style: italic; color: var(--ouro); }
+[hidden] { display: none !important; }
+:focus-visible { outline: 2px solid var(--ouro); outline-offset: 3px; }
+
+.ico { width: 1.2em; height: 1.2em; flex: none; }
+.script { font-family: var(--script); color: var(--ouro); font-size: 1.7rem; margin: 0; line-height: 1; }
+.miudo { font-size: .8rem; color: var(--tinta-2); text-align: center; margin: .6rem 0 0; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  min-height: 48px; padding: .7rem 1.4rem; border-radius: 999px; border: 1.5px solid transparent;
+  font-weight: 500; letter-spacing: .02em; text-decoration: none; cursor: pointer;
+  transition: transform .15s ease, background .2s ease, box-shadow .2s ease;
+}
+.btn:active { transform: scale(.97); }
+.btn-primario { background: var(--verde); color: var(--papel); box-shadow: var(--sombra); }
+.btn-primario:hover { background: var(--verde-2); }
+.btn-linha { border-color: var(--verde); color: var(--verde); background: transparent; }
+.btn-linha:hover { background: rgba(45, 59, 39, .06); }
+.btn-wpp { background: var(--wpp); color: #fff; box-shadow: 0 14px 30px -16px rgba(31, 157, 85, .8); }
+.btn-wpp:hover { background: #188a4a; }
+.btn-sm { min-height: 40px; padding: .45rem 1rem; font-size: .92rem; }
+.btn-bloco { width: 100%; }
+.btn[disabled] { opacity: .5; pointer-events: none; }
+
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+.chip {
+  border: 1.5px solid var(--linha); background: var(--papel); border-radius: 999px;
+  padding: .5rem 1rem; min-height: 42px; cursor: pointer; font-size: .95rem;
+  transition: all .15s ease;
+}
+.chip small { color: var(--tinta-2); margin-left: .25rem; }
+.chip[aria-pressed="true"] { background: var(--verde); border-color: var(--verde); color: var(--papel); }
+.chip[aria-pressed="true"] small { color: var(--ouro-claro); }
+
+.campo { display: grid; gap: .35rem; font-size: .9rem; color: var(--tinta-2); }
+.campo > span { font-weight: 500; color: var(--tinta); }
+.campo small { font-weight: 400; color: var(--tinta-2); }
+.campo input, .campo textarea, .campo select {
+  width: 100%; border: 1.5px solid var(--linha); background: var(--papel);
+  border-radius: 12px; padding: .75rem .9rem; min-height: 48px; font-size: 1rem; color: var(--tinta);
+}
+.campo textarea { resize: vertical; min-height: 88px; }
+.campo input:focus, .campo textarea:focus, .campo select:focus { outline: none; border-color: var(--salvia); box-shadow: 0 0 0 3px var(--salvia-clara); }
+
+.segmento { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; background: var(--salvia-clara); border-radius: 999px; padding: 4px; gap: 4px; }
+.segmento label { position: relative; }
+.segmento input { position: absolute; opacity: 0; inset: 0; }
+.segmento span { display: block; text-align: center; padding: .55rem .5rem; border-radius: 999px; cursor: pointer; font-weight: 500; font-size: .95rem; color: var(--verde-2); }
+.segmento input:checked + span { background: var(--papel); color: var(--verde); box-shadow: 0 4px 10px -6px rgba(0, 0, 0, .35); }
+.segmento input:focus-visible + span { outline: 2px solid var(--ouro); }
+
+.monograma {
+  font-family: var(--serifa); font-weight: 600; color: var(--verde); font-size: 2rem; line-height: 1;
+  display: inline-flex; align-items: flex-end; letter-spacing: -.08em;
+}
+.monograma span { color: var(--ouro); margin-left: -.05em; transform: translateY(.12em); }
+
+.toast {
+  position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom)); transform: translate(-50%, 20px);
+  background: var(--verde); color: var(--papel); padding: .8rem 1.3rem; border-radius: 999px;
+  box-shadow: var(--sombra); opacity: 0; pointer-events: none; transition: all .25s ease; z-index: 100;
+  max-width: calc(100vw - 32px); text-align: center; font-size: .95rem;
+}
+.toast.visivel { opacity: 1; transform: translate(-50%, 0); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

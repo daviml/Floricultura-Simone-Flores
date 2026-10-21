@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Simone Flores · Floricultura em Uberlândia</title>
+  <meta name="description" content="Floricultura em Uberlândia (Presidente Roosevelt). Buquês montados à mão, criações novas toda semana, plantas, orquídeas e cestas. Nota 5,0 no Google. Peça pelo WhatsApp.">
+  <meta name="theme-color" content="#2d3b27">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Simone Flores · Mais que flores, levamos sentimentos">
+  <meta property="og:description" content="Criações novas toda semana. Veja a vitrine de hoje e peça pelo WhatsApp.">
+  <meta property="og:image" content="/assets/img/logo-original.png">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Simone Flores">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Florist",
+    "name": "Simone Flores",
+    "slogan": "Mais que flores, levamos sentimentos.",
+    "description": "Floricultura artesanal: buquês montados à mão, criações novas toda semana, flores, plantas e presentes.",
+    "telephone": "+55 34 99716-8364",
+    "image": "/assets/img/logo-original.png",
+    "sameAs": ["https://www.instagram.com/simone.rezende.188/", "https://share.google/fkQQJeKKAGJPss6A9"],
+    "openingHours": "Mo-Sa 09:00-18:00",
+    "priceRange": "R$ 80 - R$ 300",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Atlântica, 463 - Presidente Roosevelt",
+      "addressLocality": "Uberlândia",
+      "addressRegion": "MG",
+      "postalCode": "38401-100",
+      "addressCountry": "BR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": -18.900743, "longitude": -48.291057 },
+    "areaServed": { "@type": "City", "name": "Uberlândia" }
+  }
+  </script>
+  <link rel="icon" href="/assets/img/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/img/icon-180.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <div class="aviso" id="aviso" hidden></div>
+
+  <header class="topo" id="topo">
+    <a class="marca" href="#inicio" aria-label="Simone Flores, início">
+      <span class="monograma" aria-hidden="true">S<span>F</span></span>
+      <span class="marca-texto"><b>Simone</b><small>Flores</small></span>
+    </a>
+    <nav class="menu" aria-label="Seções">
+      <a href="#vitrine">Vitrine</a>
+      <a href="#monte">Monte o seu</a>
+      <a href="#atelie">Ateliê</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn-wpp btn-sm" data-wpp="Olá, Simone! Vim pelo site 🌷" href="#" target="_blank" rel="noopener">
+      <svg class="ico"><use href="#i-wpp"/></svg><span>Pedir</span>
+    </a>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <svg class="folhagem folhagem-e" aria-hidden="true"><use href="#ramo"/></svg>
+      <div class="hero-texto">
+        <p class="sobretitulo"><span class="pulso"></span><span id="hero-status">Vitrine atualizada</span></p>
+        <h1>Mais que flores,<br><em>levamos sentimentos.</em></h1>
+        <p class="hero-sub">Buquês montados à mão, um a um. Aqui não existe catálogo fixo: toda semana nascem criações novas — e quando acabam, dão lugar às próximas.</p>
+        <div class="hero-acoes">
+          <a class="btn btn-primario" href="#vitrine">Ver a vitrine de hoje</a>
+          <a class="btn btn-linha" href="#monte">Montar o meu buquê</a>
+        </div>
+        <ul class="selos">
+          <li><b>Feito à mão</b><span>na hora do pedido</span></li>
+          <li><b>Peças únicas</b><span>quantidade limitada</span></li>
+          <li class="selo-google"><b><span id="hero-nota">5,0</span> <i aria-hidden="true">★</i></b><span id="hero-avaliacoes">no Google</span></li>
+        </ul>
+      </div>
+      <div class="hero-arte">
+        <div class="arco" id="hero-arco">
+          <img src="/assets/img/logo-original.png" alt="Logo Simone Flores" id="hero-img">
+        </div>
+        <button class="cartao-flutuante" id="hero-cartao" hidden>
+          <span class="mini-rotulo">Nova na vitrine</span>
+          <b id="hero-nome"></b>
+          <span id="hero-preco"></span>
+        </button>
+        <span class="assinatura" aria-hidden="true">com carinho, Simone</span>
+      </div>
+    </section>
+
+    <!-- VITRINE -->
+    <section class="secao" id="vitrine">
+      <div class="secao-cabeca">
+        <p class="script">vitrine viva</p>
+        <h2>O que saiu do ateliê <em>hoje</em></h2>
+        <p class="secao-sub" id="vitrine-sub">Cada criação fica pouco tempo por aqui. Gostou? Garanta a sua.</p>
+      </div>
+      <div class="filtros" id="filtros" role="toolbar" aria-label="Filtrar por ocasião"></div>
+      <div class="grade" id="grade" aria-live="polite">
+        <div class="card esqueleto"></div><div class="card esqueleto"></div><div class="card esqueleto"></div>
+      </div>
+      <div class="vazio" id="vazio" hidden>
+        <img src="/assets/img/buque.svg" alt="" width="120" height="150">
+        <h3>A Simone está criando novidades</h3>
+        <p>A vitrine se renova o tempo todo. Enquanto isso, monte o seu buquê do seu jeito ou chame no WhatsApp.</p>
+        <a class="btn btn-primario" href="#monte">Montar o meu</a>
+      </div>
+    </section>
+
+    <!-- AVALIAÇÕES -->
+    <section class="secao avaliacoes" id="avaliacoes" hidden>
+      <div class="secao-cabeca">
+        <p class="script">quem recebe, conta</p>
+        <h2><span id="av-nota">5,0</span> <em>★★★★★</em></h2>
+        <p class="secao-sub" id="av-total">avaliações no Google</p>
+      </div>
+      <div class="depoimentos" id="depoimentos"></div>
+      <div class="hero-acoes centro">
+        <a class="btn btn-linha" id="av-link" href="#" target="_blank" rel="noopener">Ver todas no Google</a>
+        <a class="btn btn-linha" id="av-chegar" href="#" target="_blank" rel="noopener">📍 Como chegar</a>
+      </div>
+    </section>
+
+    <!-- MONTE O SEU -->
+    <section class="secao monte" id="monte">
+      <div class="secao-cabeca">
+        <p class="script">do seu jeito</p>
+        <h2>Monte o seu <em>buquê</em></h2>
+        <p class="secao-sub">Conte pra gente a ocasião e o estilo. A Simone escolhe as flores mais lindas do dia.</p>
+      </div>
+
+      <form class="monte-grade" id="form-monte">
+        <div class="monte-passos">
+          <fieldset class="passo">
+            <legend><span>1</span> Qual a ocasião?</legend>
+            <div class="chips" data-campo="ocasiao" data-unico></div>
+          </fieldset>
+
+          <fieldset class="passo">
+            <legend><span>2</span> Qual o estilo?</legend>
+            <div class="estilos" data-campo="estilo" data-unico>
+              <button type="button" class="estilo" data-valor="Rosas clássicas"><i style="--c1:#c9475a;--c2:#f1b5b8"></i><b>Rosas clássicas</b><small>Elegante e romântico</small></button>
+              <button type="button" class="estilo" data-valor="Do campo"><i style="--c1:#9a7cc0;--c2:#f2e3a6"></i><b>Do campo</b><small>Leve, solto, natural</small></button>
+              <button type="button" class="estilo" data-valor="Girassóis"><i style="--c1:#e8a92c;--c2:#6b4b2a"></i><b>Girassóis</b><small>Alegria pura</small></button>
+              <button type="button" class="estilo" data-valor="Delicado"><i style="--c1:#f5e6dc;--c2:#cfdcc6"></i><b>Delicado</b><small>Tons claros e suaves</small></button>
+              <button type="button" class="estilo" data-valor="Tropical"><i style="--c1:#e2553a;--c2:#3f7d4c"></i><b>Tropical</b><small>Folhagens e cor</small></button>
+              <button type="button" class="estilo" data-valor="Surpreenda-me"><i style="--c1:#b48a4c;--c2:#2d3b27"></i><b>Surpreenda-me</b><small>A Simone escolhe</small></button>
+            </div>
+          </fieldset>
+
+          <fieldset class="passo">
+            <legend><span>3</span> Tamanho</legend>
+            <div class="tamanhos" data-campo="tamanho" data-unico id="tamanhos"></div>
+          </fieldset>
+
+          <fieldset class="passo">
+            <legend><span>4</span> Entrega e cartão</legend>
+            <div class="entrega-campos" data-entrega></div>
+          </fieldset>
+        </div>
+
+        <aside class="resumo" aria-label="Resumo do pedido">
+          <img src="/assets/img/buque.svg" alt="" class="resumo-buque" width="90" height="112">
+          <h3>Seu buquê</h3>
+          <dl id="resumo-lista"></dl>
+          <p class="resumo-total" id="resumo-total"></p>
+          <button class="btn btn-wpp btn-bloco" type="submit"><svg class="ico"><use href="#i-wpp"/></svg> Enviar pedido no WhatsApp</button>
+          <p class="miudo">Você confirma valores e entrega direto com a Simone.</p>
+        </aside>
+      </form>
+    </section>
+
+    <!-- TAMBÉM TEMOS -->
+    <section class="secao tambem" id="tambem">
+      <div class="secao-cabeca">
+        <p class="script">além dos buquês</p>
+        <h2>Também <em>temos</em></h2>
+        <p class="secao-sub">Toque em um item e pergunte direto para a Simone.</p>
+      </div>
+      <div class="tambem-grade">
+        <a class="tambem-item" data-wpp="Olá, Simone! 🌿 Quais plantas e orquídeas você tem hoje?" href="#" target="_blank" rel="noopener"><span>🪴</span><b>Plantas e orquídeas</b><small>Variadas espécies, para casa e presente</small></a>
+        <a class="tambem-item" data-wpp="Olá, Simone! 🎁 Queria montar uma cesta personalizada." href="#" target="_blank" rel="noopener"><span>🎁</span><b>Cestas personalizadas</b><small>Flores, chocolates e mimos do seu jeito</small></a>
+        <a class="tambem-item" data-wpp="Olá, Simone! 🌹 Vocês têm botões de rosa avulsos hoje?" href="#" target="_blank" rel="noopener"><span>🌹</span><b>Botões de rosa</b><small>Avulsos ou em buquê</small></a>
+        <a class="tambem-item" data-wpp="Olá, Simone! 🌱 Preciso de adubo / terra / substrato. O que você indica?" href="#" target="_blank" rel="noopener"><span>🌱</span><b>Adubos, terra e vasos</b><small>Fertilizantes, substratos e pedras decorativas</small></a>
+        <a class="tambem-item destaque" data-wpp="Olá, Simone! 🚑 Minha planta não está bem. Posso mandar uma foto pra você ver?" href="#" target="_blank" rel="noopener"><span>🚑</span><b>UTI de plantas</b><small>Sua planta está triste? Mande uma foto que a Simone ajuda</small></a>
+      </div>
+    </section>
+
+    <!-- ATELIÊ -->
+    <section class="secao atelie" id="atelie" hidden>
+      <div class="secao-cabeca">
+        <p class="script">já saíram daqui</p>
+        <h2>Do nosso <em>ateliê</em></h2>
+        <p class="secao-sub">Essas já foram embora, mas a Simone pode criar uma parecida pra você.</p>
+      </div>
+      <div class="mosaico" id="mosaico"></div>
+    </section>
+
+  </main>
+
+  <footer class="rodape" id="contato">
+    <div class="rodape-marca">
+      <span class="monograma grande" aria-hidden="true">S<span>F</span></span>
+      <p class="script">Mais que flores, levamos sentimentos.</p>
+      <p class="rodape-sobre" id="sobre-texto"></p>
+      <a class="btn btn-linha-clara btn-sm" id="link-insta" href="#" target="_blank" rel="noopener"><svg class="ico"><use href="#i-insta"/></svg> Ver criações no Instagram</a>
+    </div>
+    <div class="rodape-info">
+      <div><h4>Pedidos</h4><a data-wpp="Olá, Simone! 🌷" href="#" target="_blank" rel="noopener" id="rodape-wpp"></a><a id="rodape-insta" href="#" target="_blank" rel="noopener"></a></div>
+      <div><h4>Horário</h4><p id="rodape-horario"></p></div>
+      <div><h4>Entrega</h4><p id="rodape-entrega"></p></div>
+      <div><h4>Pagamento</h4><div class="pix-box clara" data-pix hidden><svg class="pix-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.5 21.5 12 12 21.5 2.5 12Zm0 4.2L6.7 12l5.3 5.3 5.3-5.3Z"/></svg><div><b>Aceitamos Pix</b><small>Chave <span data-pix-chave></span></small><small>Pague depois que a Simone confirmar o pedido.</small></div><button type="button" class="btn btn-linha btn-sm" data-copiar-pix>Copiar</button></div></div>
+      <div id="rodape-endereco-bloco" hidden><h4>Onde estamos</h4><p id="rodape-endereco"></p><a id="rodape-mapa" href="#" target="_blank" rel="noopener">📍 Como chegar →</a></div>
+    </div>
+    <p class="rodape-fim">© <span id="ano"></span> Simone Flores · <a href="/admin">Área da Simone</a></p>
+  </footer>
+
+  <div class="barra-monte" id="barra-monte" aria-hidden="true">
+    <div class="barra-valor"><small>Seu buquê</small><b id="barra-monte-total">Monte do seu jeito</b></div>
+    <button class="btn btn-wpp" type="submit" form="form-monte" tabindex="-1"><svg class="ico"><use href="#i-wpp"/></svg> Enviar</button>
+  </div>
+
+  <a class="fab-wpp" data-wpp="Olá, Simone! Vim pelo site 🌷" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg class="ico"><use href="#i-wpp"/></svg></a>
+
+  <!-- MODAL DO PRODUTO -->
+  <dialog class="modal" id="modal">
+    <form method="dialog" class="modal-fechar"><button aria-label="Fechar">×</button></form>
+    <div class="modal-corpo">
+      <div class="modal-fotos">
+        <div class="carrossel" id="m-fotos"></div>
+        <div class="pontos" id="m-pontos"></div>
+      </div>
+      <form class="modal-info" id="form-produto">
+        <div class="badges" id="m-badges"></div>
+        <h3 id="m-nome"></h3>
+        <p class="preco" id="m-preco"></p>
+        <p class="descricao" id="m-descricao"></p>
+        <p class="ocasioes" id="m-ocasioes"></p>
+        <p class="credito" id="m-credito" hidden></p>
+        <div class="modal-pedido" id="m-pedido">
+          <h4>Complementos</h4>
+          <div class="chips" data-campo="complementos" id="m-complementos"></div>
+          <details class="mais-pedido">
+            <summary>Adicionar data, entrega e cartão <small>(opcional)</small></summary>
+            <div class="entrega-campos" data-entrega></div>
+          </details>
+        </div>
+        <div class="pix-box" data-pix hidden><svg class="pix-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.5 21.5 12 12 21.5 2.5 12Zm0 4.2L6.7 12l5.3 5.3 5.3-5.3Z"/></svg><div><b>Aceitamos Pix</b><small>Chave <span data-pix-chave></span></small><small>Pague depois que a Simone confirmar o pedido.</small></div><button type="button" class="btn btn-linha btn-sm" data-copiar-pix>Copiar</button></div>
+        <button class="btn btn-linha btn-bloco" type="button" id="m-compartilhar"><svg class="ico"><use href="#i-share"/></svg> Mandar pra alguém</button>
+      </form>
+      <div class="modal-barra">
+        <div class="barra-valor"><small id="m-rotulo">Total</small><b id="m-total"></b></div>
+        <button class="btn btn-wpp" type="submit" form="form-produto" id="m-pedir"><svg class="ico"><use href="#i-wpp"/></svg> <span>Pedir pelo WhatsApp</span></button>
+      </div>
+    </div>
+  </dialog>
+
+  <template id="tpl-entrega">
+    <div class="segmento" role="radiogroup" aria-label="Entrega ou retirada">
+      <label><input type="radio" name="modo" value="Entrega" checked><span>Entregar</span></label>
+      <label><input type="radio" name="modo" value="Retirada"><span>Vou buscar</span></label>
+    </div>
+    <label class="campo"><span>Para quando?</span><input type="date" name="data"></label>
+    <label class="campo" data-so-entrega><span>Bairro da entrega</span><input name="bairro" placeholder="Ex.: Centro" autocomplete="address-level3"></label>
+    <label class="campo"><span>Para quem é?</span><input name="para" placeholder="Nome de quem vai receber"></label>
+    <label class="campo"><span>Mensagem do cartão <small>(opcional)</small></span><textarea name="cartao" rows="3" maxlength="300" placeholder="Escreva com o coração ♡"></textarea></label>
+  </template>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-wpp" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 1.8.8 2.5.8 3.4.7.6-.1 1.6-.7 1.9-1.3.2-.6.2-1.2.2-1.3-.1-.2-.3-.2-.5-.3Z"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><path fill="currentColor" d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4ZM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM12 3.8c2.7 0 3 0 4 .1 2.7.1 4 1.4 4.1 4.1.1 1 .1 1.3.1 4s0 3-.1 4c-.1 2.7-1.4 4-4.1 4.1-1 .1-1.3.1-4 .1s-3 0-4-.1c-2.7-.1-4-1.4-4.1-4.1-.1-1-.1-1.3-.1-4s0-3 .1-4C4 5.3 5.3 4 8 3.9c1 0 1.3-.1 4-.1ZM12 2c-2.7 0-3 0-4.1.1C4.3 2.2 2.2 4.3 2.1 7.9 2 9 2 9.3 2 12s0 3 .1 4.1c.1 3.6 2.2 5.7 5.8 5.8 1.1.1 1.4.1 4.1.1s3 0 4.1-.1c3.6-.1 5.7-2.2 5.8-5.8.1-1.1.1-1.4.1-4.1s0-3-.1-4.1c-.1-3.6-2.2-5.7-5.8-5.8C15 2 14.7 2 12 2Z"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></symbol>
+    <symbol id="ramo" viewBox="0 0 120 400"><g fill="none" stroke="#8fa382" stroke-width="2"><path d="M60 400C58 300 64 200 56 0"/></g><g fill="#a9b99c" opacity=".85"><ellipse cx="40" cy="340" rx="20" ry="13" transform="rotate(-25 40 340)"/><ellipse cx="80" cy="300" rx="20" ry="13" transform="rotate(25 80 300)"/><ellipse cx="38" cy="255" rx="19" ry="12" transform="rotate(-25 38 255)"/><ellipse cx="80" cy="215" rx="18" ry="12" transform="rotate(25 80 215)"/><ellipse cx="38" cy="170" rx="17" ry="11" transform="rotate(-25 38 170)"/><ellipse cx="76" cy="130" rx="16" ry="10" transform="rotate(25 76 130)"/><ellipse cx="40" cy="90" rx="14" ry="9" transform="rotate(-25 40 90)"/><ellipse cx="72" cy="55" rx="12" ry="8" transform="rotate(25 72 55)"/><ellipse cx="50" cy="22" rx="10" ry="7" transform="rotate(-25 50 22)"/></g></symbol>
+  </svg>
+
+  <script type="module" src="/assets/js/site.js"></script>
+</body>
+</html>

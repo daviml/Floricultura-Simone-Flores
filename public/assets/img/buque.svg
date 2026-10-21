@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <defs>
+    <radialGradient id="r1" cx="40%" cy="35%"><stop offset="0" stop-color="#fbe1dc"/><stop offset=".6" stop-color="#e9a9a3"/><stop offset="1" stop-color="#c77a75"/></radialGradient>
+    <radialGradient id="r2" cx="40%" cy="35%"><stop offset="0" stop-color="#fffaf2"/><stop offset=".7" stop-color="#f1e3cf"/><stop offset="1" stop-color="#d8c2a2"/></radialGradient>
+    <linearGradient id="papel" x1="0" x2="1"><stop offset="0" stop-color="#e9d6b0"/><stop offset=".5" stop-color="#f6ead3"/><stop offset="1" stop-color="#dcc497"/></linearGradient>
+  </defs>
+  <rect width="400" height="500" fill="#f3e9d8"/>
+  <g fill="#8fa382">
+    <ellipse cx="95" cy="185" rx="46" ry="20" transform="rotate(-40 95 185)"/>
+    <ellipse cx="305" cy="180" rx="46" ry="20" transform="rotate(40 305 180)"/>
+    <ellipse cx="200" cy="95" rx="18" ry="42"/>
+    <ellipse cx="120" cy="120" rx="16" ry="38" transform="rotate(-30 120 120)"/>
+    <ellipse cx="282" cy="118" rx="16" ry="38" transform="rotate(30 282 118)"/>
+  </g>
+  <g fill="#fffaf2" opacity=".9">
+    <circle cx="140" cy="95" r="5"/><circle cx="152" cy="80" r="4"/><circle cx="262" cy="88" r="5"/><circle cx="250" cy="72" r="4"/><circle cx="200" cy="58" r="5"/>
+  </g>
+  <g>
+    <circle cx="200" cy="175" r="52" fill="url(#r1)"/>
+    <path d="M200 140c18 4 26 22 16 36-8 12-28 12-34 0-6-12 4-24 18-22" fill="none" stroke="#b86a66" stroke-width="3" opacity=".6"/>
+    <circle cx="135" cy="200" r="40" fill="url(#r2)"/>
+    <path d="M135 175c13 3 18 16 11 26-6 8-20 8-24 0" fill="none" stroke="#c4ab86" stroke-width="2.5"/>
+    <circle cx="268" cy="205" r="42" fill="url(#r1)"/>
+    <path d="M268 178c14 3 20 17 12 28-6 9-22 9-26 0" fill="none" stroke="#b86a66" stroke-width="2.5" opacity=".6"/>
+    <circle cx="200" cy="240" r="38" fill="url(#r2)"/>
+    <path d="M200 216c12 3 17 15 10 24-5 8-18 8-22 0" fill="none" stroke="#c4ab86" stroke-width="2.5"/>
+  </g>
+  <path d="M110 245 L200 470 L290 245 Q200 280 110 245Z" fill="url(#papel)"/>
+  <path d="M110 245 L200 470 L170 262Z" fill="#000" opacity=".06"/>
+  <path d="M165 360 Q200 380 235 360 L228 378 Q200 392 172 378Z" fill="#2d3b27"/>
+  <path d="M200 372 q-26 -10 -30 8 q14 6 30 -8 q26 -10 30 8 q-14 6 -30 -8" fill="#b0884a"/>
+</svg>

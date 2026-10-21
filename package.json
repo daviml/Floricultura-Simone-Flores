@@ -1,0 +1,11 @@
+{
+  "name": "simone-flores",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Vitrine viva e painel da floricultura Simone Flores",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "node dev-server.js"
+  }
+}
