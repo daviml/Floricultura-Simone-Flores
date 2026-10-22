@@ -4,9 +4,11 @@
 // Uso:
 //   node scripts/exemplos.js                                    → servidor local (senha "simone")
 //   node scripts/exemplos.js https://seusite.vercel.app SENHA   → site publicado
+//   node scripts/exemplos.js URL SENHA 10                        → prazos 10 dias mais longos (demonstração que dura)
 
 const BASE = (process.argv[2] || 'http://localhost:3000').replace(/\/$/, '');
 const SENHA = process.argv[3] || 'simone';
+const DIAS_EXTRA = Number(process.argv[4]) || 0;
 const CC = 'Flickr, CC BY 2.0';
 
 const VITRINE = [
@@ -125,7 +127,7 @@ const GALERIA = [
 function hojeMais(dias) {
   if (dias === null || dias === undefined) return null;
   const d = new Date(new Date().toLocaleDateString('en-CA', { timeZone: 'America/Sao_Paulo' }) + 'T12:00:00');
-  d.setDate(d.getDate() + dias);
+  d.setDate(d.getDate() + dias + (dias >= 0 ? DIAS_EXTRA : 0));
   return d.toISOString().slice(0, 10);
 }
 
