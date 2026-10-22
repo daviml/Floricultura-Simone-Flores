@@ -4,7 +4,7 @@
 // PUT  /api/catalogo?id=...    → altera produto (campos parciais)
 // DELETE /api/catalogo?id=...  → exclui produto e fotos
 
-import { alterarJSON, apagar, lerJSON, usandoGitHub } from '../lib/store.js';
+import { alterarJSON, apagar, lerJSON, modo } from '../lib/store.js';
 import {
   ARQ_CONFIG,
   ARQ_PRODUTOS,
@@ -29,7 +29,7 @@ export default function handler(req, res) {
       const loja = { ...CONFIG_PADRAO, ...config };
       if (req.query.admin) {
         if (!exigirAdmin(req, res)) return;
-        return enviar(res, 200, { produtos: dados.produtos, config: loja, ocasioes: OCASIOES, usandoGitHub });
+        return enviar(res, 200, { produtos: dados.produtos, config: loja, ocasioes: OCASIOES, modo });
       }
       return enviar(
         res,

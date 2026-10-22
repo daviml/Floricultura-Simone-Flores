@@ -75,7 +75,12 @@ $('#sair').addEventListener('click', sair);
 
 async function carregar() {
   dados = await api('GET', '/api/catalogo?admin=1');
-  $('#aviso-dev').hidden = dados.usandoGitHub;
+  const avisos = {
+    local: 'Modo teste: os dados ficam só neste computador.',
+    leitura: 'Modo demonstração: dá para ver tudo, mas publicar ainda não salva. Falta configurar o GITHUB_TOKEN na Vercel.',
+  };
+  $('#aviso-dev').textContent = avisos[dados.modo] || '';
+  $('#aviso-dev').hidden = !avisos[dados.modo];
   render();
 }
 
