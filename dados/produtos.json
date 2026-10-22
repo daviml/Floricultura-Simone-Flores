@@ -1,0 +1,322 @@
+{
+  "produtos": [
+    {
+      "id": "mvjlfrje04i1",
+      "nome": "Mimo Rosé",
+      "descricao": "Mini rosas num vasinho branco, prontas para presentear. Pequeno no tamanho, enorme no carinho.",
+      "preco": 89,
+      "fotos": [
+        "mvjlfrj29v00.jpg"
+      ],
+      "ocasioes": [
+        "Só porque sim",
+        "Agradecimento",
+        "Maternidade"
+      ],
+      "tipo": "pronta",
+      "quantidade": 3,
+      "validade": "2026-11-08",
+      "destaque": false,
+      "status": "ativo",
+      "exemplo": true,
+      "credito": "John Beans (Flickr, CC BY 2.0)",
+      "criadoEm": "2026-10-22T13:45:27.337Z",
+      "atualizadoEm": "2026-10-22T13:45:27.337Z",
+      "publicadoEm": "2026-10-22T13:45:27.337Z"
+    },
+    {
+      "id": "mvjlfrgrvx08",
+      "nome": "Abraço de Rosas",
+      "descricao": "Rosas cor-de-rosa colhidas no ponto, com mosquitinho e folhagem fresca.\nEmbrulho em papel de seda e laço de cetim.",
+      "preco": 169,
+      "fotos": [
+        "mvjlfrdltw5y.jpg",
+        "mvjlfrggj58o.jpg"
+      ],
+      "ocasioes": [
+        "Amor",
+        "Aniversário"
+      ],
+      "tipo": "pronta",
+      "quantidade": 1,
+      "validade": "2026-11-03",
+      "destaque": true,
+      "status": "ativo",
+      "exemplo": true,
+      "credito": "Kurozumi e Patty Vicknair (Flickr, CC BY 2.0)",
+      "criadoEm": "2026-10-22T13:45:27.243Z",
+      "atualizadoEm": "2026-10-22T13:45:27.243Z",
+      "publicadoEm": "2026-10-22T13:45:27.243Z"
+    },
+    {
+      "id": "mvjlfrarqou0",
+      "nome": "Encanto de Peônias",
+      "descricao": "Peônias brancas e rosadas em vaso de vidro. Abrem devagar e perfumam a casa inteira por dias.",
+      "preco": 229,
+      "fotos": [
+        "mvjlfradtedh.jpg"
+      ],
+      "ocasioes": [
+        "Casamento",
+        "Amor",
+        "Agradecimento"
+      ],
+      "tipo": "pronta",
+      "quantidade": 2,
+      "validade": "2026-11-05",
+      "destaque": false,
+      "status": "ativo",
+      "exemplo": true,
+      "credito": "Rockspindeln (Flickr, CC BY 2.0)",
+      "criadoEm": "2026-10-21T13:45:27.027Z",
+      "atualizadoEm": "2026-10-21T13:45:27.027Z",
+      "publicadoEm": "2026-10-21T13:45:27.027Z"
+    },
+    {
+      "id": "mvjlfr80b49r",
+      "nome": "Luz de Domingo",
+      "descricao": "Rosas amarelas e tulipas num pote de vidro azul. Alegria para colocar na mesa.",
+      "preco": 119,
+      "fotos": [
+        "mvjlfr7pz5px.jpg"
+      ],
+      "ocasioes": [
+        "Agradecimento",
+        "Formatura"
+      ],
+      "tipo": "pronta",
+      "quantidade": 1,
+      "validade": "2026-11-02",
+      "destaque": false,
+      "status": "ativo",
+      "exemplo": true,
+      "credito": "Berries.com (Flickr, CC BY 2.0)",
+      "criadoEm": "2026-10-20T13:45:26.928Z",
+      "atualizadoEm": "2026-10-20T13:45:26.928Z",
+      "publicadoEm": "2026-10-20T13:45:26.928Z"
+    },
+    {
+      "id": "mvjlfr4qtpsz",
+      "nome": "Dia de Sol",
+      "descricao": "Girassóis graúdos num vaso de cerâmica. Para quem precisa de um dia mais feliz.",
+      "preco": 139,
+      "fotos": [
+        "mvjlfr4fxzwh.jpg"
+      ],
+      "ocasioes": [
+        "Aniversário",
+        "Agradecimento",
+        "Só porque sim"
+      ],
+      "tipo": "pronta",
+      "quantidade": null,
+      "validade": "2026-11-07",
+      "destaque": false,
+      "status": "ativo",
+      "exemplo": true,
+      "credito": "kinglear55 (Flickr, CC BY 2.0)",
+      "criadoEm": "2026-10-19T13:45:26.810Z",
+      "atualizadoEm": "2026-10-19T13:45:26.810Z",
+      "publicadoEm": "2026-10-19T13:45:26.810Z"
+    },
+    {
+      "id": "mvjlfqzlclnj",
+      "nome": "Paixão Vermelha",
+      "descricao": "Tulipas vermelhas com lírios brancos em vaso de vidro.",
+      "preco": 199,
+      "fotos": [
+        "mvjlfqz6f1mo.jpg"
+      ],
+      "ocasioes": [
+        "Amor"
+      ],
+      "tipo": "pronta",
+      "quantidade": 0,
+      "validade": "2026-11-04",
+      "destaque": false,
+      "status": "ativo",
+      "exemplo": true,
+      "credito": "ProFlowers.com (Flickr, CC BY 2.0)",
+      "criadoEm": "2026-10-18T13:45:26.625Z",
+      "atualizadoEm": "2026-10-18T13:45:26.625Z",
+      "publicadoEm": "2026-10-18T13:45:26.625Z"
+    },
+    {
+      "id": "mvjlfqxmxju0",
+      "nome": "Tulipas de Domingo",
+      "descricao": "Tulipas cor-de-rosa num jarro branco. Delicadas, elegantes e cheias de luz.",
+      "preco": 159,
+      "fotos": [
+        "mvjlfqx8qfjx.jpg"
+      ],
+      "ocasioes": [
+        "Maternidade",
+        "Só porque sim"
+      ],
+      "tipo": "pronta",
+      "quantidade": 2,
+      "validade": "2026-11-01",
+      "destaque": false,
+      "status": "ativo",
+      "exemplo": true,
+      "credito": "Berries.com (Flickr, CC BY 2.0)",
+      "criadoEm": "2026-10-17T13:45:26.554Z",
+      "atualizadoEm": "2026-10-17T13:45:26.554Z",
+      "publicadoEm": "2026-10-17T13:45:26.554Z"
+    },
+    {
+      "id": "mvjlfqu18wsr",
+      "nome": "Festa em Flor",
+      "descricao": "Alstroemérias coloridas em vaso. Duram até duas semanas e combinam com balão e chocolate.",
+      "preco": 149,
+      "fotos": [
+        "mvjlfqtni1q6.jpg"
+      ],
+      "ocasioes": [
+        "Aniversário"
+      ],
+      "tipo": "encomenda",
+      "quantidade": null,
+      "validade": null,
+      "destaque": false,
+      "status": "ativo",
+      "exemplo": true,
+      "credito": "ProFlowers.com (Flickr, CC BY 2.0)",
+      "criadoEm": "2026-10-16T13:45:26.425Z",
+      "atualizadoEm": "2026-10-16T13:45:26.425Z",
+      "publicadoEm": "2026-10-16T13:45:26.425Z"
+    },
+    {
+      "id": "mvjlfqr7bp57",
+      "nome": "Noiva Clássica",
+      "descricao": "Buquê de noiva branco, com rosas, lisianthus e folhagem. Montado sob medida para o seu grande dia — combine a paleta com a Simone.",
+      "preco": null,
+      "fotos": [
+        "mvjlfqqt0xng.jpg"
+      ],
+      "ocasioes": [
+        "Casamento"
+      ],
+      "tipo": "encomenda",
+      "quantidade": null,
+      "validade": null,
+      "destaque": false,
+      "status": "ativo",
+      "exemplo": true,
+      "credito": "jenny downing (Flickr, CC BY 2.0)",
+      "criadoEm": "2026-10-14T13:45:26.323Z",
+      "atualizadoEm": "2026-10-14T13:45:26.323Z",
+      "publicadoEm": "2026-10-14T13:45:26.323Z"
+    },
+    {
+      "id": "mvjlfqo4jjwy",
+      "nome": "Doce Manhã",
+      "descricao": "",
+      "preco": 129,
+      "fotos": [
+        "mvjlfqnt7bgi.jpg"
+      ],
+      "ocasioes": [
+        "Amor"
+      ],
+      "tipo": "pronta",
+      "quantidade": null,
+      "validade": "2026-10-21",
+      "destaque": false,
+      "status": "arquivado",
+      "exemplo": true,
+      "credito": "cchiao (Flickr, CC BY 2.0)",
+      "criadoEm": "2026-10-04T13:45:26.212Z",
+      "atualizadoEm": "2026-10-04T13:45:26.212Z",
+      "publicadoEm": "2026-10-04T13:45:26.212Z"
+    },
+    {
+      "id": "mvjlfqlkh84o",
+      "nome": "Nuvem Azul",
+      "descricao": "",
+      "preco": 240,
+      "fotos": [
+        "mvjlfql9it06.jpg"
+      ],
+      "ocasioes": [
+        "Casamento"
+      ],
+      "tipo": "pronta",
+      "quantidade": null,
+      "validade": "2026-10-21",
+      "destaque": false,
+      "status": "arquivado",
+      "exemplo": true,
+      "credito": "EvinDC (Flickr, CC BY 2.0)",
+      "criadoEm": "2026-10-07T13:45:26.120Z",
+      "atualizadoEm": "2026-10-07T13:45:26.120Z",
+      "publicadoEm": "2026-10-07T13:45:26.120Z"
+    },
+    {
+      "id": "mvjlfqh4u8zh",
+      "nome": "Bem-me-quer",
+      "descricao": "",
+      "preco": 210,
+      "fotos": [
+        "mvjlfqgtxczi.jpg"
+      ],
+      "ocasioes": [
+        "Casamento"
+      ],
+      "tipo": "pronta",
+      "quantidade": null,
+      "validade": "2026-10-21",
+      "destaque": false,
+      "status": "arquivado",
+      "exemplo": true,
+      "credito": "amrufm (Flickr, CC BY 2.0)",
+      "criadoEm": "2026-10-09T13:45:25.960Z",
+      "atualizadoEm": "2026-10-09T13:45:25.960Z",
+      "publicadoEm": "2026-10-09T13:45:25.960Z"
+    },
+    {
+      "id": "mvjlfq9pytby",
+      "nome": "Pôr do Sol",
+      "descricao": "",
+      "preco": 159,
+      "fotos": [
+        "mvjlfq9e3wde.jpg"
+      ],
+      "ocasioes": [
+        "Aniversário"
+      ],
+      "tipo": "pronta",
+      "quantidade": null,
+      "validade": "2026-10-21",
+      "destaque": false,
+      "status": "arquivado",
+      "exemplo": true,
+      "credito": "Muffet (Flickr, CC BY 2.0)",
+      "criadoEm": "2026-10-11T13:45:25.693Z",
+      "atualizadoEm": "2026-10-11T13:45:25.693Z",
+      "publicadoEm": "2026-10-11T13:45:25.693Z"
+    },
+    {
+      "id": "mvjlfq3jl3g1",
+      "nome": "Campo em Flor",
+      "descricao": "",
+      "preco": 180,
+      "fotos": [
+        "mvjlfq2i53jn.jpg"
+      ],
+      "ocasioes": [
+        "Casamento"
+      ],
+      "tipo": "pronta",
+      "quantidade": null,
+      "validade": "2026-10-21",
+      "destaque": false,
+      "status": "arquivado",
+      "exemplo": true,
+      "credito": "Gareth1953 (Flickr, CC BY 2.0)",
+      "criadoEm": "2026-10-13T13:45:25.470Z",
+      "atualizadoEm": "2026-10-13T13:45:25.470Z",
+      "publicadoEm": "2026-10-13T13:45:25.470Z"
+    }
+  ]
+}
